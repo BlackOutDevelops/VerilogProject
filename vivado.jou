@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Apr 28 08:32:17 2021
+# Process ID: 13964
+# Current directory: D:/School/HDL in Digital System Design/Project/verilog/FinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2352 D:\School\HDL in Digital System Design\Project\verilog\FinalProject\FinalProject.xpr
+# Log file: D:/School/HDL in Digital System Design/Project/verilog/FinalProject/vivado.log
+# Journal file: D:/School/HDL in Digital System Design/Project/verilog/FinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+close_sim

@@ -1,0 +1,8 @@
+stimulus.v
+clkgen.v
+regfile.v
+datapath.v
+table2.v
+control.v
+writeoutput.v
+top.v

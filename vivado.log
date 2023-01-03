@@ -1,0 +1,1333 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Apr 28 08:32:17 2021
+# Process ID: 13964
+# Current directory: D:/School/HDL in Digital System Design/Project/verilog/FinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2352 D:\School\HDL in Digital System Design\Project\verilog\FinalProject\FinalProject.xpr
+# Log file: D:/School/HDL in Digital System Design/Project/verilog/FinalProject/vivado.log
+# Journal file: D:/School/HDL in Digital System Design/Project/verilog/FinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/table2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module table2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/writeoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.table2
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.clkgen
+Compiling module xil_defaultlib.stimulus
+Compiling module xil_defaultlib.writeoutput
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+
+****** Webtalk v2020.2.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/School/HDL -notrace
+couldn't read file "D:/School/HDL": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 28 08:36:46 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/table2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module table2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/writeoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.table2
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.clkgen
+Compiling module xil_defaultlib.stimulus
+Compiling module xil_defaultlib.writeoutput
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/table2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module table2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/writeoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.table2
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.clkgen
+Compiling module xil_defaultlib.stimulus
+Compiling module xil_defaultlib.writeoutput
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/table2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module table2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/writeoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.table2
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.clkgen
+Compiling module xil_defaultlib.stimulus
+Compiling module xil_defaultlib.writeoutput
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/table2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module table2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/writeoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.table2
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.clkgen
+Compiling module xil_defaultlib.stimulus
+Compiling module xil_defaultlib.writeoutput
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/table2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module table2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/writeoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/HDL in Digital System Design/Project/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.table2
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.clkgen
+Compiling module xil_defaultlib.stimulus
+Compiling module xil_defaultlib.writeoutput
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+"xelab -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9f2651ab951145a2af1c40af251f325d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/School/HDL in Digital System Design/Project/verilog/FinalProject/FinalProject.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000000ms
+Reading in Table 1: Maxcode, Base:table1.dat
+Reading in Table 2: Address(n-1), Run-length(n), Size(n):table2.dat
+Reading in image: test1.dat
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: RESET
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000110 base=111111
+State: INIT_TABLE1 maxcode=000001110 base=111000
+State: INIT_TABLE1 maxcode=000011110 base=101001
+State: INIT_TABLE1 maxcode=000111110 base=001010
+State: INIT_TABLE1 maxcode=001111110 base=001011
+State: INIT_TABLE1 maxcode=011111110 base=001100
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=000000001 base=001011
+State: INIT_TABLE1 maxcode=000000100 base=001001
+State: INIT_TABLE1 maxcode=000001100 base=000100
+State: INIT_TABLE1 maxcode=000011011 base=110111
+State: INIT_TABLE1 maxcode=000111010 base=011011
+State: INIT_TABLE1 maxcode=001110111 base=100000
+State: INIT_TABLE1 maxcode=000000000 base=000000
+State: INIT_TABLE1 maxcode=111111100 base=111000
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=0 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=2
+State: INIT_TABLE2 run_length=0 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=0
+State: INIT_TABLE2 run_length=0 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=1
+State: INIT_TABLE2 run_length=3 coeff_size=0
+State: INIT_TABLE2 run_length=3 coeff_size=1
+State: INIT_TABLE2 run_length=0 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=3
+State: INIT_TABLE2 run_length=0 coeff_size=7
+State: INIT_TABLE2 run_length=0 coeff_size=8
+State: INIT_TABLE2 run_length=0 coeff_size=9
+State: INIT_TABLE2 run_length=0 coeff_size=a
+State: INIT_TABLE2 run_length=1 coeff_size=4
+State: INIT_TABLE2 run_length=1 coeff_size=5
+State: INIT_TABLE2 run_length=1 coeff_size=6
+State: INIT_TABLE2 run_length=1 coeff_size=7
+State: INIT_TABLE2 run_length=1 coeff_size=8
+State: INIT_TABLE2 run_length=1 coeff_size=9
+State: INIT_TABLE2 run_length=1 coeff_size=a
+State: INIT_TABLE2 run_length=2 coeff_size=2
+State: INIT_TABLE2 run_length=2 coeff_size=3
+State: INIT_TABLE2 run_length=2 coeff_size=4
+State: INIT_TABLE2 run_length=2 coeff_size=5
+State: INIT_TABLE2 run_length=2 coeff_size=6
+State: INIT_TABLE2 run_length=2 coeff_size=7
+State: INIT_TABLE2 run_length=2 coeff_size=8
+State: INIT_TABLE2 run_length=2 coeff_size=9
+State: INIT_TABLE2 run_length=2 coeff_size=a
+State: INIT_TABLE2 run_length=3 coeff_size=2
+State: INIT_TABLE2 run_length=3 coeff_size=3
+State: INIT_TABLE2 run_length=3 coeff_size=4
+State: INIT_TABLE2 run_length=3 coeff_size=5
+State: INIT_TABLE2 run_length=3 coeff_size=6
+State: INIT_TABLE2 run_length=3 coeff_size=7
+State: INIT_TABLE2 run_length=3 coeff_size=8
+State: INIT_TABLE2 run_length=3 coeff_size=9
+State: INIT_TABLE2 run_length=3 coeff_size=a
+Decoding image...
+$stop called at time : 27625 ns : File "D:/School/HDL in Digital System Design/Project/verilog/stimulus.v" Line 250
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000000ms
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1008.133 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 28 08:45:14 2021...

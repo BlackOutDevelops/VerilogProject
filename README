@@ -1,0 +1,9 @@
+Note: *.dat files are bitstream files
+
+image.dat JPEG bitstream data file (verilog input)
+          In order to run verilog on any test file:
+	   cp test.dat image.dat
+	   Change the variable, NUM_BITS, as shown in stimulus.v
+	   Run your favorite verilog simulator (eg: ISE)
+	   Compare huff_dec.out with test.out for test.dat
+

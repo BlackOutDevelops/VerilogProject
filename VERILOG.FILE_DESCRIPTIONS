@@ -1,0 +1,9 @@
+datapath.v (Implementation of datapath)
+regfile.v (Implementation of Table1 and code_length counter)
+table2.v  (Implementation of Table2 and latches for coeff_size and run_length)
+control.v (Implementation of FSM and generation of other control signals)
+stimulus.v (Stimulus file, Here you have to change NUM_BITS value for
+            different tests)
+writeoutput.v (writes the outputs to a file huff_dec.out)
+top.v      (top level verilog module)
+clkgen.v  (clock generator module)

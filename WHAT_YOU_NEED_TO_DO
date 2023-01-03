@@ -1,0 +1,18 @@
+To fix the datapath:
+
+In datapath.v: 
+//  You have to implement the following blocks:
+//  o 9-bit comparator (bits > maxcode)
+//  o 6-bit table2_addr calculation
+//  o Add additional or remove excess latches 
+//    to ensure correct timing of signals
+//    (look at the timing diagram in the homework to determine where
+//     they should go and shouldn't be)
+
+In regfile.v
+//  You have to implement the following blocks:
+//  o 8-bit code_length SR (provides address to Lookup Table 1)
+
+To fix the control:
+In control.v
+//  You need to implement logic for FSM machine
